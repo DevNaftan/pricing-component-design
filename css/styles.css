@@ -1,0 +1,155 @@
+/***********/
+/** FONTS **/
+/***********/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+/************/
+/** COLORS **/
+/************/
+/*************/
+/** GENERAL **/
+/*************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-size: 15px;
+  background: url("../../assets/images/bg-top.svg") 195px -35px no-repeat;
+  background-color: #f6f6fe;
+}
+
+main {
+  padding-bottom: 35px;
+}
+
+.toogle__label {
+  display: flex;
+  width: 56px;
+  height: 32px;
+  padding: 4px;
+  border-radius: 25px;
+  position: relative;
+  align-items: center;
+  background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+}
+.toogle__label::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  right: 4px;
+  background-color: white;
+}
+.toogle__checkbox {
+  display: none;
+}
+
+.title {
+  margin: 20px 0;
+  font-size: 2.1em;
+  color: #6d708d;
+}
+
+.plan-title {
+  color: #b3b5c6;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  color: #494c5f;
+}
+.price strong {
+  font-size: 1.9em;
+}
+
+.white-text {
+  color: white;
+}
+
+.header {
+  padding: 45px 0 75px 0;
+  text-align: center;
+}
+
+.plans-mode {
+  display: flex;
+  width: 100%;
+  max-width: 250px;
+  margin: 35px auto 0 auto;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pricing {
+  padding: 0 25px;
+}
+
+.pricing-box {
+  padding: 35px 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  text-align: center;
+  color: #6d708d;
+  background-color: white;
+  box-shadow: 0px 0px 5px -3px black;
+}
+.pricing-box__title {
+  margin-bottom: 20px;
+}
+.pricing-box__features {
+  list-style: none;
+  padding: 25px 0;
+}
+.pricing-box__features li {
+  padding: 17px 0;
+  border-top: 1px solid lightgrey;
+}
+.pricing-box__features li:last-child {
+  border-bottom: 1px solid lightgrey;
+}
+
+.price-recommended {
+  color: white;
+  background-image: linear-gradient(to bottom, #a3a8f0, #696fdd);
+}
+
+.button {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #b3b5c6;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  color: white;
+  outline: none;
+  background: linear-gradient(to right, #a3a8f0, #696fdd);
+}
+.button:hover {
+  border: 1px solid #b3b5c6;
+  cursor: pointer;
+  color: #696fdd;
+  background: white;
+}
+
+.button-recommended {
+  color: #696fdd;
+  background: white;
+}
+.button-recommended:hover {
+  border: 1px solid #b3b5c6;
+  cursor: pointer;
+  color: white;
+  background: transparent;
+}
+
+/*# sourceMappingURL=styles.css.map */

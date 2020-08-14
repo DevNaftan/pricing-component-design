@@ -1,0 +1,25 @@
+.toogle {
+  &__label {
+    display: flex;
+    width: 56px;
+    height: 32px;
+    padding: 4px;
+    border-radius: 25px;
+    position: relative;
+    align-items: center;
+    background-image: linear-gradient(to right, $gradient-left, $gradient-right);
+    &::after{
+      content: '';
+      display: block;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      position: absolute;
+      right: 4px;
+      background-color: white;
+    }
+  }
+  &__checkbox {
+    display: none;
+  }
+}

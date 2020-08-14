@@ -1,0 +1,29 @@
+.button {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid $light-color;
+  border-radius: $radius-button;
+  font-size: .8em;
+  font-weight: bold;
+  letter-spacing: .15em;
+  color: white;
+  outline: none;
+  background: linear-gradient(to right, $gradient-left, $gradient-right);
+  &:hover {
+    border: 1px solid $light-color;
+    cursor: pointer;
+    color: $gradient-right;
+    background: white;
+  }
+}
+
+.button-recommended {
+  color: $gradient-right;
+  background: white;
+  &:hover{
+    border: 1px solid $light-color;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+  }
+}

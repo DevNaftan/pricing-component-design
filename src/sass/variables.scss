@@ -1,0 +1,22 @@
+/***********/
+/** FONTS **/
+/***********/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+$font: 'Montserrat', sans-serif;
+$font-size: 15px;
+
+/************/
+/** COLORS **/
+/************/
+$background-color: hsl(240, 78%, 98%);
+$light-color: hsl(234, 14%, 74%);
+$medium-color: hsl(233, 13%, 49%);
+$dark-color: hsl(232, 13%, 33%);
+$gradient-left: hsl(236, 72%, 79%);
+$gradient-right:hsl(237, 63%, 64%);
+
+/*************/
+/** GENERAL **/
+/*************/
+$radius-box: 10px;
+$radius-button: 5px;

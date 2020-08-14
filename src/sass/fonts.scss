@@ -1,0 +1,24 @@
+.title {
+  margin: 20px 0;
+  font-size: 2.1em;
+  color: $medium-color;
+}
+
+.plan-title {
+  color: $light-color;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  color: $dark-color;
+  strong {
+    font-size: 1.9em;
+  }
+}
+
+.white-text {
+  color: white;
+}

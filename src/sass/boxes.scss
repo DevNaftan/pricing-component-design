@@ -1,0 +1,47 @@
+.header {
+  padding: 45px 0 75px 0;
+  text-align: center;
+}
+
+.plans-mode {
+  display: flex;
+  width: 100%;
+  max-width: 250px;
+  margin: 35px auto 0 auto;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pricing {
+  padding: 0 25px;
+}
+
+.pricing-box {
+  padding: 35px 30px;
+  margin-bottom: 30px;
+  border-radius: $radius-box;
+  text-align: center;
+  color: $medium-color;
+  background-color: white;
+  box-shadow: 0px 0px 5px -3px black;
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__features {
+    list-style: none;
+    padding: 25px 0;
+    li {
+      padding: 17px 0;
+      border-top: 1px solid lightgrey;
+    }
+    li:last-child {
+      border-bottom: 1px solid lightgrey;
+    }
+  }
+}
+
+.price-recommended {
+  color: white;
+  background-image: linear-gradient(to bottom, $gradient-left, $gradient-right);
+}
