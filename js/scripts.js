@@ -18,6 +18,7 @@ function mode(event) {
 }
 
 body.addEventListener('keydown', event => {
+  event.preventDefault()
   if (event.code === 'Space') {
     if (toogle.checked) {
       toogle.checked = false
