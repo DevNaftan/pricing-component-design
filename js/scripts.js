@@ -18,8 +18,8 @@ function mode(event) {
 }
 
 body.addEventListener('keydown', event => {
-  event.preventDefault()
   if (event.code === 'Space') {
+    event.preventDefault()
     if (toogle.checked) {
       toogle.checked = false
       plan1.textContent = '19.99'
