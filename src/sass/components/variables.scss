@@ -3,7 +3,7 @@
 /***********/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 $font: 'Montserrat', sans-serif;
-$font-size: 15px;
+$general-size: 15px;
 
 /************/
 /** COLORS **/
@@ -16,7 +16,26 @@ $gradient-left: hsl(236, 72%, 79%);
 $gradient-right:hsl(237, 63%, 64%);
 
 /*************/
+/** EXTENDS **/
+/*************/
+%pricing-active-hover {
+  border: 1px solid $light-color;
+  color: $gradient-right;
+  background: white;
+}
+%pricing-active-hover-recommended {
+  border: 1px solid $light-color;
+  color: white;
+  background: transparent;
+}
+%toogle-active-hover {
+  opacity: .65;
+}
+
+
+/*************/
 /** GENERAL **/
 /*************/
 $radius-box: 10px;
 $radius-button: 5px;
+$duration-animation: .3s;

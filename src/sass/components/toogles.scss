@@ -1,4 +1,8 @@
 .toogle {
+  user-select: none;
+  &__checkbox:checked + &__label::after {
+    transform: translateX(0);
+  }
   &__label {
     display: flex;
     width: 56px;
@@ -15,8 +19,17 @@
       height: 24px;
       border-radius: 50%;
       position: absolute;
-      right: 4px;
       background-color: white;
+      transition-duration: $duration-animation;
+      transition-property: transform;
+      transform: translateX(24px);
+    }
+    &:active {
+      @extend %toogle-active-hover;
+    }
+    &:hover {
+      cursor: pointer;
+      @extend %toogle-active-hover;
     }
   }
   &__checkbox {

@@ -6,6 +6,25 @@
 /** COLORS **/
 /************/
 /*************/
+/** EXTENDS **/
+/*************/
+.button:hover, .button:active {
+  border: 1px solid #b3b5c6;
+  color: #696fdd;
+  background: white;
+}
+
+.button-recommended:hover, .button-recommended:active {
+  border: 1px solid #b3b5c6;
+  color: white;
+  background: transparent;
+}
+
+.toogle__label:hover, .toogle__label:active {
+  opacity: 0.65;
+}
+
+/*************/
 /** GENERAL **/
 /*************/
 * {
@@ -17,14 +36,60 @@
 
 body {
   font-size: 15px;
-  background: url("../../assets/images/bg-top.svg") 195px -35px no-repeat;
+  background-image: url("../assets/images/bg-top.svg");
+  background-repeat: no-repeat;
+  background-position: 195px -35px;
   background-color: #f6f6fe;
+}
+@media only screen and (min-width: 500px) {
+  body {
+    background-position: 300px -35px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  body {
+    background-position: 400px -35px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  body {
+    background-position: 500px -35px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  body {
+    background-position: 600px -35px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  body {
+    background-position: 700px -35px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body {
+    background-position: 825px -35px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  body {
+    background-image: url("../assets/images/bg-top.svg"), url("../assets/images/bg-bottom.svg");
+    background-position: right top, left bottom;
+    background-size: 20%;
+    background-attachment: fixed;
+  }
 }
 
 main {
-  padding-bottom: 35px;
+  padding-bottom: 50px;
 }
 
+.toogle {
+  user-select: none;
+}
+.toogle__checkbox:checked + .toogle__label::after {
+  transform: translateX(0);
+}
 .toogle__label {
   display: flex;
   width: 56px;
@@ -42,36 +107,16 @@ main {
   height: 24px;
   border-radius: 50%;
   position: absolute;
-  right: 4px;
   background-color: white;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: translateX(24px);
+}
+.toogle__label:hover {
+  cursor: pointer;
 }
 .toogle__checkbox {
   display: none;
-}
-
-.title {
-  margin: 20px 0;
-  font-size: 2.1em;
-  color: #6d708d;
-}
-
-.plan-title {
-  color: #b3b5c6;
-}
-
-.price {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5em;
-  color: #494c5f;
-}
-.price strong {
-  font-size: 1.9em;
-}
-
-.white-text {
-  color: white;
 }
 
 .header {
@@ -90,10 +135,51 @@ main {
 }
 
 .pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0 25px;
+}
+@media only screen and (min-width: 1100px) {
+  .pricing {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.title {
+  margin: 20px 0;
+  font-size: 2.1em;
+  color: #6d708d;
+}
+
+.plan-title {
+  color: #b3b5c6;
+}
+
+.plan-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.1em;
+  color: #494c5f;
+}
+.plan-price strong {
+  font-size: 1.9em;
+}
+@media only screen and (min-width: 375px) {
+  .plan-price {
+    font-size: 2.4em;
+  }
+}
+
+.white-text {
+  color: white;
 }
 
 .pricing-box {
+  width: 100%;
+  max-width: 335px;
   padding: 35px 30px;
   margin-bottom: 30px;
   border-radius: 10px;
@@ -116,10 +202,24 @@ main {
 .pricing-box__features li:last-child {
   border-bottom: 1px solid lightgrey;
 }
+@media only screen and (min-width: 1100px) {
+  .pricing-box:first-child {
+    border-radius: 10px 0 0 10px;
+  }
+  .pricing-box:last-child {
+    border-radius: 0 10px 10px 0;
+  }
+}
 
-.price-recommended {
+.pricing-recommended {
   color: white;
   background-image: linear-gradient(to bottom, #a3a8f0, #696fdd);
+}
+@media only screen and (min-width: 1100px) {
+  .pricing-recommended {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .button {
@@ -135,10 +235,7 @@ main {
   background: linear-gradient(to right, #a3a8f0, #696fdd);
 }
 .button:hover {
-  border: 1px solid #b3b5c6;
   cursor: pointer;
-  color: #696fdd;
-  background: white;
 }
 
 .button-recommended {
@@ -146,10 +243,7 @@ main {
   background: white;
 }
 .button-recommended:hover {
-  border: 1px solid #b3b5c6;
   cursor: pointer;
-  color: white;
-  background: transparent;
 }
 
 /*# sourceMappingURL=styles.css.map */

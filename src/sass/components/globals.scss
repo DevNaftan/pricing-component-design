@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+}
+
+body {
+  font-size: $general-size;
+  background-image: url('../assets/images/bg-top.svg');
+  background-repeat: no-repeat;
+  background-position: 195px -35px;
+  background-color: $background-color;
+  @include media(display1) {
+    background-position: 300px -35px;
+  }
+  @include media(display2) {
+    background-position: 400px -35px;
+  }
+  @include media(display3) {
+    background-position: 500px -35px;
+  }
+  @include media(display4) {
+    background-position: 600px -35px;
+  }
+  @include media(display5) {
+    background-position: 700px -35px;
+  }
+  @include media(display6) {
+    background-position: 825px -35px;
+  }
+  @include media(display7) {
+    background-image: url('../assets/images/bg-top.svg'), url('../assets/images/bg-bottom.svg');
+    background-position: right top, left bottom;
+    background-size: 20%;
+    background-attachment: fixed;
+  }
+}
+
+main {
+  padding-bottom: 50px;
+}

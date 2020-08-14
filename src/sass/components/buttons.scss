@@ -9,21 +9,23 @@
   color: white;
   outline: none;
   background: linear-gradient(to right, $gradient-left, $gradient-right);
+  &:active {
+    @extend %pricing-active-hover;
+  }
   &:hover {
-    border: 1px solid $light-color;
     cursor: pointer;
-    color: $gradient-right;
-    background: white;
+    @extend %pricing-active-hover;
   }
 }
 
 .button-recommended {
   color: $gradient-right;
   background: white;
+  &:active{
+    @extend %pricing-active-hover-recommended;
+  }
   &:hover{
-    border: 1px solid $light-color;
     cursor: pointer;
-    color: white;
-    background: transparent;
+    @extend %pricing-active-hover-recommended;
   }
 }
