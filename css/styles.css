@@ -8,19 +8,19 @@
 /*************/
 /** EXTENDS **/
 /*************/
-.button:hover, .button:active {
+.button:active {
   border: 1px solid #b3b5c6;
   color: #696fdd;
   background: white;
 }
 
-.button-recommended:hover, .button-recommended:active {
+.button-recommended:active {
   border: 1px solid #b3b5c6;
   color: white;
   background: transparent;
 }
 
-.toogle__label:hover, .toogle__label:active {
+.toogle__label:active {
   opacity: 0.65;
 }
 
@@ -112,8 +112,11 @@ main {
   transition-property: transform;
   transform: translateX(24px);
 }
-.toogle__label:hover {
-  cursor: pointer;
+@media only screen and (min-width: 1024px) {
+  .toogle__label:hover {
+    cursor: pointer;
+    opacity: 0.65;
+  }
 }
 .toogle__checkbox {
   display: none;
@@ -234,16 +237,24 @@ main {
   outline: none;
   background: linear-gradient(to right, #a3a8f0, #696fdd);
 }
-.button:hover {
-  cursor: pointer;
+@media only screen and (min-width: 1024px) {
+  .button:hover {
+    cursor: pointer;
+    color: #696fdd;
+    background: white;
+  }
 }
 
 .button-recommended {
   color: #696fdd;
   background: white;
 }
-.button-recommended:hover {
-  cursor: pointer;
+@media only screen and (min-width: 1024px) {
+  .button-recommended:hover {
+    cursor: pointer;
+    color: white;
+    background: transparent;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

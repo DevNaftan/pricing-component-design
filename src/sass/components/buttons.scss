@@ -12,9 +12,12 @@
   &:active {
     @extend %pricing-active-hover;
   }
-  &:hover {
-    cursor: pointer;
-    @extend %pricing-active-hover;
+  @include media(display6) {
+    &:hover {
+      cursor: pointer;
+      color: $gradient-right;
+      background: white;
+    }
   }
 }
 
@@ -24,8 +27,11 @@
   &:active{
     @extend %pricing-active-hover-recommended;
   }
-  &:hover{
-    cursor: pointer;
-    @extend %pricing-active-hover-recommended;
+  @include media(display6) {
+    &:hover{
+      cursor: pointer;
+      color: white;
+      background: transparent;
+    }
   }
 }

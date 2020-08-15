@@ -27,9 +27,11 @@
     &:active {
       @extend %toogle-active-hover;
     }
-    &:hover {
-      cursor: pointer;
-      @extend %toogle-active-hover;
+    @include media(display6) {
+      &:hover {
+        cursor: pointer;
+        opacity: .65;
+      }
     }
   }
   &__checkbox {
