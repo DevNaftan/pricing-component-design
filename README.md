@@ -1,5 +1,5 @@
 # Pricing component design 
-A pricing component design with toogle for plans
+A responsive pricing component design with toogle for plans
 
 ### Technologies used
 * HTML5
